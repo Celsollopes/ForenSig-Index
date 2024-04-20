@@ -14,7 +14,7 @@ The general metric, ForenSig Index (FSI), has three other components that quanti
 The Equations that describe each metric are:
 
 
-### SIP
+## SIP
 
 $$
 \text{SIP} = \frac{\sum (I_{\text{model}} \cdot I_{\text{experts}})}{\sum I_{\text{experts}}}
@@ -27,13 +27,14 @@ $$
 $$
 
 
-### CI
+## CI
 
 $$
 \text{CI} = \sigma(\text{SIP})
 $$
 
-### CPM
+
+## CPM
 
 $$
 \text{CPM} = \text{Correlation}(\text{SIP}, \text{Precision}_{\text{model}})
@@ -44,3 +45,5 @@ $$
 $$
 \text{FSI} = w_{1} \cdot \text{SIP} + w_{2} \cdot (1 - \text{CI}) + w_{3} \cdot \text{CPM}
 $$
+
+ $w_{1}$, $w_{2}$, and $w_{3}$ are weights assigned to each component of the metric (SIP, CI, and CPM, respectively), reflecting their relative importance. A higher ForenSig Index value indicates an SVA that is accurate, consistent, and aligned with the criteria of professional graph analysis.
